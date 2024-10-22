@@ -11,6 +11,7 @@ import datetime
 import os
 import re
 
+AWS_REGION = "us-east-1"
 AUDIO_DEVICE_INDEX = 1
 
 class CaptionDisplay:
@@ -139,7 +140,7 @@ class AudioTranscriber:
         await stream.input_stream.end_stream()
 
     async def basic_transcribe(self):
-        self.client = TranscribeStreamingClient(region="us-west-2")
+        self.client = TranscribeStreamingClient(region=AWS_REGION)
 
         self.stream = await self.client.start_stream_transcription(
             language_code="en-US",
