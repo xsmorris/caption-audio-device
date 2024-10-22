@@ -11,6 +11,8 @@ import datetime
 import os
 import re
 
+AUDIO_DEVICE_INDEX = 1
+
 class CaptionDisplay:
     def __init__(self, on_closing):
         self.root = tk.Tk()
@@ -121,7 +123,7 @@ class AudioTranscriber:
             callback=callback,
             blocksize=1024 * 2,
             dtype="int16",
-            device=1  # Make sure this is set to your VB-Audio Virtual Cable index
+            device=AUDIO_DEVICE_INDEX
         )
         
         with stream:
