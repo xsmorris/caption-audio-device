@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a Live Captions Transcriber that uses speech recognition to provide real-time captions for audio input. It displays the captions in a graphical user interface and saves the transcript to a file.
+This project is a Live Captions Transcriber that uses speech recognition to provide real-time captions for audio input. It displays the captions in a graphical user interface and saves the transcript to a file. The transcription is powered by Amazon Transcribe, you will need to have an AWS account to use this. You should have your credentials set up to use the AWS CLI or environment variables configured to access it. Minimal configuration is required.
 
 ## Features
 
