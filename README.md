@@ -39,5 +39,5 @@ This project is a Live Captions Transcriber that uses speech recognition to prov
 ## Configuration
 
 - Adjust the audio input device in the `listen.py` file if needed.
--- The variable `AUDIO_DEVICE_INDEX` should be set to the index of the audio device to capture.
+- The variable `AUDIO_DEVICE_INDEX` should be set to the index of the audio device to capture.
 - Modify the post-processing rules in the `post_process_transcript` method to suit your needs.
